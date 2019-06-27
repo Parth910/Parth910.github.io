@@ -1,15 +1,15 @@
 <?php
-$to = "opqrs4203@gmail.com";
+
+ini_set('display_errors',1);
+error-reporting(E_ALL);
+
+$to = "admin@patelparth.me";
 $subject = "Respnse from site";
 $message = "I am very happy";
 $headers = "From:prp4203@gmail.com";
-
-if(mail($to, $subject, $message, $headers)){
+mail($to, $subject, $message, $headers)
     echo "Mail send Successfully";
-    else{
-        echo "sorry";
-    }
-}
+    
 
 
 
